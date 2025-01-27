@@ -26,6 +26,14 @@ header nav a {
     margin: 0 10px;
     color: #0078D4;
     font-weight: bold;
+    cursor: pointer;
+}
+
+header input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .weather-info {
