@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="page.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>WeatherConnect</title>
 </head>
 <body>
@@ -11,22 +12,24 @@
         <h1>WeatherConnect</h1>
         <nav>
             <a href="#" id="home-btn">Accueil</a>
-            <a href="#" id="search-btn">Search</a>
         </nav>
-        <input type="text" id="city-input" placeholder="Entrez une ville..." />
+        <input type="text" id="input" placeholder="Entrez une ville..." />
+        <button onclick="displayBtn()">Search</button>
     </header>
 
     <section class="weather-info">
-        <h2>Beni Mellal</h2>
-        <p>...</p>
-        <div class="temperature">...</div>
+        <div class="location-container">
+            <div class="city"><i class="bx bxs-map-pin"></i> <span id="city">...</span></div>
+            <p id="country">...</p>
+        </div>
+        <div class="temperature" id="tmp">...</div>
         <div class="details">
             <div>
-                <p>...</p>
+                <p id="wind">...</p>
                 <span>Vent</span>
             </div>
             <div>
-                <p>...</p>
+                <p id="humidity">...</p>
                 <span>Humidité</span>
             </div>
         </div>
